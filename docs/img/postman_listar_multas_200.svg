@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <style>
+      .bg { fill: #1e1e1e; rx: 8px; }
+      .header { fill: #2d2d2d; }
+      .title { fill: #ffffff; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; font-weight: 600; }
+      .method-get { fill: #2ed573; font-family: monospace; font-weight: bold; font-size: 13px; }
+      .url { fill: #dcdde1; font-family: monospace; font-size: 13px; }
+      .status-badge { fill: #2ed573; rx: 4px; }
+      .status-text { fill: #ffffff; font-family: monospace; font-size: 12px; font-weight: bold; }
+      .time-text { fill: #a4b0be; font-family: 'Segoe UI', sans-serif; font-size: 12px; }
+      .pane-bg { fill: #252526; rx: 6px; }
+      .json-key { fill: #9cdcfe; font-family: 'Consolas', monospace; font-size: 12px; }
+      .json-val-str { fill: #ce9178; font-family: 'Consolas', monospace; font-size: 12px; }
+      .json-val-num { fill: #b5cea8; font-family: 'Consolas', monospace; font-size: 12px; }
+      .json-punct { fill: #d4d4d4; font-family: 'Consolas', monospace; font-size: 12px; }
+    </style>
+  </defs>
+
+  <rect width="800" height="450" class="bg" />
+  
+  <!-- Window Header -->
+  <path d="M 0 0 L 800 0 L 800 40 L 0 40 Z" class="header" />
+  <circle cx="20" cy="20" r="6" fill="#ff5f56" />
+  <circle cx="38" cy="20" r="6" fill="#ffbd2e" />
+  <circle cx="56" cy="20" r="6" fill="#27c93f" />
+  <text x="80" y="25" class="title">Postman — GET /api/multas/estudiante/EST-2024-001 (Consulta de Multas)</text>
+
+  <!-- URL Bar -->
+  <rect x="20" y="55" width="760" height="38" rx="5" fill="#2d2d2d" stroke="#3e3e42" stroke-width="1" />
+  <text x="35" y="79" class="method-get">GET</text>
+  <text x="75" y="79" class="url">http://localhost:8080/api/multas/estudiante/EST-2024-001</text>
+  
+  <!-- Status & Time Bar -->
+  <rect x="580" y="62" width="90" height="24" class="status-badge" />
+  <text x="590" y="78" class="status-text">200 OK</text>
+  <text x="685" y="78" class="time-text">18 ms</text>
+
+  <!-- Response Section -->
+  <rect x="20" y="105" width="760" height="325" class="pane-bg" stroke="#3e3e42" stroke-width="1" />
+  <text x="35" y="130" fill="#a4b0be" font-family="'Segoe UI', sans-serif" font-size="12px" font-weight="600">Response Body (JSON Array):</text>
+  
+  <text x="40" y="155" class="json-punct">[</text>
+  <text x="60" y="175" class="json-punct">{ </text><text x="75" y="175" class="json-key">"id"</text><text x="95" y="175" class="json-punct">: </text><text x="105" y="175" class="json-val-num">1</text><text x="115" y="175" class="json-punct">, </text><text x="125" y="175" class="json-key">"concepto"</text><text x="185" y="175" class="json-punct">: </text><text x="195" y="175" class="json-val-str">"Clean Code"</text><text x="275" y="175" class="json-punct">, </text><text x="285" y="175" class="json-key">"monto"</text><text x="325" y="175" class="json-punct">: </text><text x="335" y="175" class="json-val-num">2500.00</text><text x="385" y="175" class="json-punct">, </text><text x="395" y="175" class="json-key">"estado"</text><text x="440" y="175" class="json-punct">: </text><text x="450" y="175" class="json-val-str">"PAGADA"</text><text x="505" y="175" class="json-punct">, </text><text x="515" y="175" class="json-key">"metodoPago"</text><text x="590" y="175" class="json-punct">: </text><text x="600" y="175" class="json-val-str">"VENTANILLA"</text><text x="685" y="175" class="json-punct"> },</text>
+  <text x="60" y="200" class="json-punct">{ </text><text x="75" y="200" class="json-key">"id"</text><text x="95" y="200" class="json-punct">: </text><text x="105" y="200" class="json-val-num">2</text><text x="115" y="200" class="json-punct">, </text><text x="125" y="200" class="json-key">"concepto"</text><text x="185" y="200" class="json-punct">: </text><text x="195" y="200" class="json-val-str">"Design Patterns"</text><text x="315" y="200" class="json-punct">, </text><text x="325" y="200" class="json-key">"monto"</text><text x="365" y="200" class="json-punct">: </text><text x="375" y="200" class="json-val-num">15000.00</text><text x="430" y="200" class="json-punct">, </text><text x="440" y="200" class="json-key">"estado"</text><text x="485" y="200" class="json-punct">: </text><text x="495" y="200" class="json-val-str">"PENDIENTE"</text><text x="575" y="200" class="json-punct"> },</text>
+  <text x="60" y="225" class="json-punct">{ </text><text x="75" y="225" class="json-key">"id"</text><text x="95" y="225" class="json-punct">: </text><text x="105" y="225" class="json-val-num">3</text><text x="115" y="225" class="json-punct">, </text><text x="125" y="225" class="json-key">"concepto"</text><text x="185" y="225" class="json-punct">: </text><text x="195" y="225" class="json-val-str">"Domain-Driven Design"</text><text x="355" y="225" class="json-punct">, </text><text x="365" y="225" class="json-key">"monto"</text><text x="405" y="225" class="json-punct">: </text><text x="415" y="225" class="json-val-num">1000.00</text><text x="465" y="225" class="json-punct">, </text><text x="475" y="225" class="json-key">"estado"</text><text x="520" y="225" class="json-punct">: </text><text x="530" y="225" class="json-val-str">"PENDIENTE"</text><text x="610" y="225" class="json-punct"> }</text>
+  <text x="40" y="250" class="json-punct">]</text>
+</svg>

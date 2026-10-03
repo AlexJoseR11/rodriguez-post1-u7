@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <style>
+      .bg { fill: #1e1e1e; rx: 8px; }
+      .header { fill: #2d2d2d; }
+      .title { fill: #ffffff; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14px; font-weight: 600; }
+      .method-post { fill: #e58e26; font-family: monospace; font-weight: bold; font-size: 13px; }
+      .url { fill: #dcdde1; font-family: monospace; font-size: 13px; }
+      .status-badge { fill: #2ed573; rx: 4px; }
+      .status-text { fill: #ffffff; font-family: monospace; font-size: 12px; font-weight: bold; }
+      .time-text { fill: #a4b0be; font-family: 'Segoe UI', sans-serif; font-size: 12px; }
+      .pane-bg { fill: #252526; rx: 6px; }
+      .json-key { fill: #9cdcfe; font-family: 'Consolas', monospace; font-size: 12.5px; }
+      .json-val-str { fill: #ce9178; font-family: 'Consolas', monospace; font-size: 12.5px; }
+      .json-val-num { fill: #b5cea8; font-family: 'Consolas', monospace; font-size: 12.5px; }
+      .json-val-null { fill: #569cd6; font-family: 'Consolas', monospace; font-size: 12.5px; }
+      .json-punct { fill: #d4d4d4; font-family: 'Consolas', monospace; font-size: 12.5px; }
+      .tab-active { fill: #ff6b4a; }
+    </style>
+  </defs>
+
+  <rect width="800" height="420" class="bg" />
+  
+  <!-- Window Header -->
+  <path d="M 0 0 L 800 0 L 800 40 L 0 40 Z" class="header" />
+  <circle cx="20" cy="20" r="6" fill="#ff5f56" />
+  <circle cx="38" cy="20" r="6" fill="#ffbd2e" />
+  <circle cx="56" cy="20" r="6" fill="#27c93f" />
+  <text x="80" y="25" class="title">Postman — POST /api/multas (Creación de Multa)</text>
+
+  <!-- URL Bar -->
+  <rect x="20" y="55" width="760" height="38" rx="5" fill="#2d2d2d" stroke="#3e3e42" stroke-width="1" />
+  <text x="35" y="79" class="method-post">POST</text>
+  <text x="85" y="79" class="url">http://localhost:8080/api/multas</text>
+  
+  <!-- Status & Time Bar -->
+  <rect x="580" y="62" width="100" height="24" class="status-badge" />
+  <text x="590" y="78" class="status-text">201 CREATED</text>
+  <text x="695" y="78" class="time-text">38 ms</text>
+
+  <!-- Response Section -->
+  <rect x="20" y="105" width="760" height="295" class="pane-bg" stroke="#3e3e42" stroke-width="1" />
+  <text x="35" y="130" fill="#a4b0be" font-family="'Segoe UI', sans-serif" font-size="12px" font-weight="600">Response Body (JSON):</text>
+  
+  <text x="40" y="160" class="json-punct">{</text>
+  <text x="60" y="185" class="json-key">"id"</text><text x="85" y="185" class="json-punct">: </text><text x="95" y="185" class="json-val-num">1</text><text x="105" y="185" class="json-punct">,</text>
+  <text x="60" y="210" class="json-key">"estudianteId"</text><text x="170" y="210" class="json-punct">: </text><text x="180" y="210" class="json-val-str">"EST-2024-001"</text><text x="290" y="210" class="json-punct">,</text>
+  <text x="60" y="235" class="json-key">"concepto"</text><text x="135" y="235" class="json-punct">: </text><text x="145" y="235" class="json-val-str">"Devolucion tardia: Clean Code"</text><text x="390" y="235" class="json-punct">,</text>
+  <text x="60" y="260" class="json-key">"diasAtraso"</text><text x="155" y="260" class="json-punct">: </text><text x="165" y="260" class="json-val-num">5</text><text x="175" y="260" class="json-punct">,</text>
+  <text x="60" y="285" class="json-key">"monto"</text><text x="110" y="285" class="json-punct">: </text><text x="120" y="285" class="json-val-num">2500.00</text><text x="175" y="285" class="json-punct">,</text>
+  <text x="60" y="310" class="json-key">"estado"</text><text x="120" y="310" class="json-punct">: </text><text x="130" y="310" class="json-val-str">"PENDIENTE"</text><text x="220" y="310" class="json-punct">,</text>
+  <text x="60" y="335" class="json-key">"fechaGeneracion"</text><text x="195" y="335" class="json-punct">: </text><text x="205" y="335" class="json-val-str">"2026-10-03"</text><text x="295" y="335" class="json-punct">,</text>
+  <text x="60" y="360" class="json-key">"fechaPago"</text><text x="145" y="360" class="json-punct">: </text><text x="155" y="360" class="json-val-null">null</text><text x="185" y="360" class="json-punct">,</text>
+  <text x="60" y="385" class="json-key">"metodoPago"</text><text x="155" y="385" class="json-punct">: </text><text x="165" y="385" class="json-val-null">null</text>
+  <text x="40" y="405" class="json-punct">}</text>
+</svg>
